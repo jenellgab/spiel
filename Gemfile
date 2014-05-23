@@ -38,3 +38,6 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem 'devise'
+gem 'twitter-bootstrap-rails'
+gem 'paperclip'
+gem 'simple_form'

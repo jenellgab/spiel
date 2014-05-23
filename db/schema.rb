@@ -11,7 +11,31 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140523074033) do
+ActiveRecord::Schema.define(:version => 20140523113027) do
+
+  create_table "friends", :force => true do |t|
+    t.integer  "person_id"
+    t.integer  "follower_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "posts", :force => true do |t|
+    t.date     "published_at"
+    t.integer  "fuse"
+    t.integer  "twenty"
+    t.integer  "candy_crush"
+    t.integer  "flappy_bird"
+    t.integer  "iron_pants"
+    t.integer  "temple_run"
+    t.integer  "minion_rush"
+    t.integer  "gbd"
+    t.integer  "fruit_ninja"
+    t.integer  "piano_tiles"
+    t.string   "avatar"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "username"
